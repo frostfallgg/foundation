@@ -1,0 +1,61 @@
+{
+	"folders": [
+		{
+			"name": "@frostfall - Package",
+			"path": "."
+		}
+	],
+	"settings": {
+		"typescript.tsdk": "node_modules/typescript/lib",
+		"files.eol": "\n",
+		"biome.enabled": true,
+		"terminal.integrated.profiles.windows": {
+			"PowerShell": {
+				"source": "PowerShell",
+				"icon": "terminal-powershell",
+				"env": {
+					"PATH": "${env:PATH};F:/Projects/Games/roblox-prod/@tooling/RBXDevCLI/RBXDevCLI/TypeScriptCLI/bin/Release/net8.0;F:/Projects/Games/roblox-prod/@scripts/package_builder/src"
+				}
+			}
+		},
+		"[typescript]": {
+			"editor.defaultFormatter": "biomejs.biome",
+			"editor.formatOnSave": true,
+			"editor.codeActionsOnSave": {
+				"source.fixAll.biome": "always",
+				"source.organizeImports.biome": "always",
+				"source.removeUnusedImports": "always",
+			},
+		},
+		"[typescriptreact]": {
+			"editor.defaultFormatter": "biomejs.biome",
+			"editor.formatOnSave": true,
+			"editor.codeActionsOnSave": {
+				"source.fixAll.biome": "always",
+				"source.organizeImports.biome": "always",
+				"source.removeUnusedImports": "always",
+			},
+		},
+		"typescript.preferences.preferTypeOnlyAutoImports": true,
+		"explorer.excludeGitIgnore": true,
+		"explorer.autoRevealExclude": {
+			"**/out": true
+		},
+		// "editor.fontFamily": "Monaspace Neon",
+		// "editor.fontLigatures": "'calt', 'liga', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09'",
+		// "editor.fontFamily": "Cascadia Code",
+		// "editor.fontLigatures": "'ss19', 'ss20'",
+		"editor.fontFamily": "Iosevka",
+		//"editor.fontFamily": "Jet Brains Mono",
+		//"editor.fontFamily": "Monego Ligatures",
+		//"editor.fontFamily": "Monaco",
+		//"editor.fontFamily": "Victor Mono",
+		"editor.fontLigatures": true,
+		"editor.fontWeight": "300",
+		"editor.fontSize": 18,
+		"editor.mouseWheelZoom": true,
+		"javascript.experimental.updateImportsOnPaste": true,
+		"typescript.experimental.updateImportsOnPaste": true,
+		"javascript.updateImportsOnFileMove.enabled": "always",
+	}
+}

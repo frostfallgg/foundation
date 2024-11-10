@@ -1,0 +1,21 @@
+{
+  "name": "frostfall/${package}",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "rbxtsc -w",
+    "build": "rbxtsc --type package"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@rbxts/compiler-types": "^3.0.0-types.0",
+    "@rbxts/types": "^1.0.810",
+    "roblox-ts": "^3.0.0",
+    "typescript": "^5.6.2",
+    "@rbxts/services": "^1.5.5"
+  }
+}
