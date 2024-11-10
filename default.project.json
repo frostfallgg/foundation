@@ -14,16 +14,13 @@
 					"$className": "Folder",
 					"@rbxts": {
 						"$path": "node_modules/@rbxts"
-					},
-					"@frostfall": {
-						"$path": "node_modules/@frostfall"
 					}
 				}
 			},
-			"Package": {
+			"package": {
 				"$path": "out/Package"
 			},
-			"Stories": {
+			"stories": {
 				"$path": "out/Stories"
 			}
 		},

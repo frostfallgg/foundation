@@ -8,7 +8,6 @@
 	"settings": {
 		"typescript.tsdk": "node_modules/typescript/lib",
 		"files.eol": "\n",
-		"biome.enabled": true,
 		"terminal.integrated.profiles.windows": {
 			"PowerShell": {
 				"source": "PowerShell",

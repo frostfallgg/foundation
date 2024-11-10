@@ -1,5 +1,5 @@
 {
-  "name": "frostfall/${package}",
+  "name": "frostfall/foundation",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

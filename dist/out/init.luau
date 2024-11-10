@@ -25,4 +25,7 @@ end
 for _k, _v in TS.import(script, script, "data-structures", "native", "priority-queue") or {} do
 	exports[_k] = _v
 end
+for _k, _v in TS.import(script, script, "native", "vector2-math") or {} do
+	exports[_k] = _v
+end
 return exports
