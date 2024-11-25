@@ -5,7 +5,7 @@ local HashMap = {}
 
 do
 	local _container = HashMap
-	local function GetArbitraryKey<T, U>(this: { [T]: U }): T
+	local function GetArbitraryKey<T, U>(this: { [T]: U }): T | nil
 		for key, _ in this do
 			return key
 		end
@@ -13,7 +13,7 @@ do
 	end
 	_container.GetArbitraryKey = GetArbitraryKey
 
-	local function GetArbitraryValue<T, U>(this: { [T]: U }): U
+	local function GetArbitraryValue<T, U>(this: { [T]: U }): U | nil
 		for _, value in this do
 			return value
 		end

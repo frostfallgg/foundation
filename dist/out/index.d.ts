@@ -6,4 +6,4 @@ export * from "./native/list";
 export * from "./native/math";
 export * from "./native/hashmap";
 export * from "./data-structures/native/priority-queue";
-export * from "./native/vector2-math";
+export * from "./data-structures/native/queue";
