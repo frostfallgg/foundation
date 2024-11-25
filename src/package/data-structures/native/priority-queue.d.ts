@@ -1,5 +1,5 @@
 export declare namespace PriorityQueue {
-	interface PriorityQueueStruct<T> {
+	interface Struct<T> {
 		_heap: Array<{
 			item: T;
 			priority: number;
@@ -7,7 +7,7 @@ export declare namespace PriorityQueue {
 		_items: Map<T, boolean>;
 	}
 
-	function New<T>(): PriorityQueueStruct<T>;
-	function Enqueue<T>(data: PriorityQueueStruct<T>, item: T, priority: number): void;
-	function Dequeue<T>(data: PriorityQueueStruct<T>): T | undefined;
+	function New<T>(): Struct<T>;
+	function Enqueue<T>(data: Struct<T>, item: T, priority: number): void;
+	function Dequeue<T>(data: Struct<T>): T | undefined;
 }

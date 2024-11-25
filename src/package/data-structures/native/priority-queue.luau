@@ -2,7 +2,7 @@
 --!native
 
 type Heap<T> = { { item: T, priority: number } }
-export type PriorityQueueStruct<T> = {
+export type Struct<T> = {
 	_heap: Heap<T>,
 	_items: { [T]: boolean },
 }
@@ -45,7 +45,7 @@ do
 		end
 	end
 
-	local function New<T>(): PriorityQueueStruct<T>
+	local function New<T>(): Struct<T>
 		return {
 			_heap = {},
 			_items = {},
@@ -53,14 +53,14 @@ do
 	end
 	_container.New = New
 
-	local function Enqueue<T>(data: PriorityQueueStruct<T>, item: T, priority: number)
+	local function Enqueue<T>(data: Struct<T>, item: T, priority: number)
 		table.insert(data._heap, { item = item, priority = priority })
 		data._items[item] = true
 		bubbleUp(data._heap)
 	end
 	_container.Enqueue = PriorityQueue.Enqueue
 
-	local function Dequeue<T>(data: PriorityQueueStruct<T>): T?
+	local function Dequeue<T>(data: Struct<T>): T?
 		local heap = data._heap
 		if #heap == 0 then
 			return nil
