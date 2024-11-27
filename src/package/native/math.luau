@@ -23,6 +23,15 @@ do
 		end
 	end
 	_container.Median = Median
+
+	local function Sum(input: { number }): number
+		local sum = 0
+		for _, x in input do
+			sum += x
+		end
+		return sum
+	end
+	_container.Sum = Sum
 end
 
 return {
